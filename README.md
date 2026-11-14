@@ -78,3 +78,15 @@ mbread anki BV1SQpX6oETX --cookies-from-browser chrome -o out.apkg
 **注意**：读取 Chrome cookie 必须在你自己的终端里运行（远程或代理进程会被 macOS 隐私权限拦截，报 Operation not permitted）。
 
 开发测试：`pip install -e ".[dev]" && pytest -q`
+
+## 许可证
+
+本仓库的第一方源代码、测试和文档，自本次迁移起仅按 GNU General Public License version 3 许可。SPDX 标识符是 `GPL-3.0-only`：只适用第 3 版。完整条款是根目录 `LICENSE`，内容为 GNU 发布的 GPLv3 正文，未作修改。
+
+Copyright (c) 2026 Near
+
+`LICENSE` 末尾 “How to Apply These Terms to Your New Programs” 是 GPLv3 原文自带的示例，其中的 “or any later version” 字样属于该示例。本项目的许可以本节为准，即 `GPL-3.0-only`。
+
+迁移前，上述第一方材料以 MIT 许可证发布。该许可证全文按原文字节保存在 `LICENSES/MIT-legacy.txt`（说明见 `LICENSES/README.md`）。迁移前已经依该 MIT 许可证获得的许可仍然有效；这次更换许可证不收回那些已经给出的许可。
+
+本次迁移不改变第三方材料的许可或署名。通过 `pyproject.toml` 安装的依赖仍使用各自上游许可证。仓库里没有单独的第三方声明、模型或素材归属文件；这次也没有新增或改写这类文件。
